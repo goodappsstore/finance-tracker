@@ -207,6 +207,13 @@ body{
   color:var(--text);
 }
 
+.topbar-publisher{
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:normal;
+  color:var(--text-2);
+}
+
 .topbar h1 i{
   width:32px;
   height:32px;

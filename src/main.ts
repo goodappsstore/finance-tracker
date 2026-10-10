@@ -521,7 +521,7 @@ function render(){
             </svg>
           </button>
         ` : ""}
-        <h1><i>₿</i> Finance Tracker <span class="pill">${esc(currency)} · ${balances.length} accounts</span></h1>
+        <h1><i>₿</i> Finance Tracker <span class="topbar-publisher">| GoodApps (hello@goodapps.store)</span> <span class="pill">${esc(currency)} · ${balances.length} accounts</span></h1>
       </div>
       <div class="topbar-actions">
         <span class="pill" title="${esc(dbPath)}">${esc(dbPath.split("/").slice(-2).join("/"))}</span>
@@ -561,7 +561,6 @@ function render(){
           ${nav("notifications","Notifications","notifications")}
           ${nav("settings","Settings","settings")}
           <button class="nav-item" id="btn-backup-restore">${navIcon("backup")}<span>Backup &amp; Restore</span></button>
-          <div class="sidebar-footer"><a href="mailto:hola@goodapps.store">hola@goodapps.store</a></div>
         </nav>
       </aside>
       <main class="main" id="main"></main>
