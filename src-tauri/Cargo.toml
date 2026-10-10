@@ -1,0 +1,33 @@
+[package]
+name = "finance-tracker"
+version = "1.0.0"
+description = "Private personal finance tracker — Tauri + SQLite"
+authors = ["Finance Tracker"]
+edition = "2021"
+rust-version = "1.77.2"
+
+[lib]
+name = "finance_tracker_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+tauri-plugin-fs = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["clock", "serde"] }
+rusqlite = { version = "0.31", features = ["bundled"] }
+csv = "1.4"
+quick-xml = { version = "0.38", features = ["serialize"] }
+encoding_rs = "0.8"
+thiserror = "2"
+directories = "5"
+uuid = { version = "1", features = ["v4"] }
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+rust_decimal = "1"
+tauri-plugin-notification = "2"

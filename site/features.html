@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Features — Finance Tracker</title>
+  <meta name="description" content="Explore all 30 built-in capabilities of Finance Tracker: Safe-to-Spend, rollover envelope budgets, 25+ bank statement presets, net worth, investments, FIRE simulator, and executive PDF reports.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%232563eb%22/><text y=%2265%22 font-size=%2255%22 x=%2250%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-weight=%22bold%22>FT</text></svg>">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>💡 Every feature listed below is <strong>included out of the box</strong>. No tier locks, no add-ons.</span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+        </div>
+        <span>Finance Tracker</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Overview</a></li>
+          <li><a href="features.html" class="nav-link active">All Features</a></li>
+          <li><a href="index.html#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta-group">
+        <a href="#download" class="btn btn-primary btn-sm js-open-download">Download</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Header -->
+  <section class="section" style="padding: 60px 0 40px 0; background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 100%);">
+    <div class="container text-center" style="text-align: center;">
+      <span class="badge badge-primary">Full Product Directory</span>
+      <h1 class="section-title" style="font-size: 2.8rem; margin-top: 14px;">Everything you need for complete financial mastery.</h1>
+      <p class="section-desc" style="max-width: 780px; margin: 0 auto;">
+        From daily grocery runs and monthly envelope budgets to 30-year retirement models and executive tax summaries. Explore all 30 core capability suites below.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter & Search Toolbar -->
+  <section style="padding: 20px 0 60px 0;">
+    <div class="container">
+      <div class="features-filter-bar">
+        <div class="filter-pills">
+          <button class="filter-pill active" data-filter="all">All Features (30)</button>
+          <button class="filter-pill" data-filter="money">Money & Accounts</button>
+          <button class="filter-pill" data-filter="banking">Bank Ingestion</button>
+          <button class="filter-pill" data-filter="planning">Budgets & Planning</button>
+          <button class="filter-pill" data-filter="wealth">Wealth & Debt</button>
+          <button class="filter-pill" data-filter="tax-reports">Taxes & Reports</button>
+          <button class="filter-pill" data-filter="security">Privacy & Safety</button>
+        </div>
+
+        <div class="search-box-input">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="feature-search-input" placeholder="Search features (e.g., import, FIRE, rollover)...">
+        </div>
+      </div>
+
+      <div id="feature-count-display" style="font-size: 0.88rem; color: var(--text-subtle); margin-bottom: 24px; font-weight: 600;">
+        Showing all 30 capabilities
+      </div>
+
+      <!-- Features Grid (All 30 Sections) -->
+      <div class="features-directory-grid">
+
+        <!-- 1. Accounts & Analytics -->
+        <div class="feature-detail-card" data-category="money">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Accounts</span>
+            <span class="detail-card-num">#01</span>
+          </div>
+          <h3 class="detail-card-title">Comprehensive Accounts & Deep Dives</h3>
+          <p class="detail-card-summary">Manage checking, savings, cash, and credit cards with automatic balance derivation and interactive analytics.</p>
+          <ul class="detail-card-list">
+            <li>Cash, checking, savings, and credit accounts</li>
+            <li>Interactive account deep-dive dashboards</li>
+            <li>Historical balance trends and monthly cash-flow charts</li>
+            <li>Top payee breakdowns and linked recurring rules</li>
+          </ul>
+        </div>
+
+        <!-- 2. Categories -->
+        <div class="feature-detail-card" data-category="money">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Organization</span>
+            <span class="detail-card-num">#02</span>
+          </div>
+          <h3 class="detail-card-title">Smart Categories & Rules</h3>
+          <p class="detail-card-summary">Organize income and expenses with flexible categories that power budgets, comparisons, and tax preparation.</p>
+          <ul class="detail-card-list">
+            <li>Income and expense classification guards</li>
+            <li>Accidental-deletion protections for active budgets</li>
+            <li>Universal integration across reports, taxes, and forecasting</li>
+            <li>Instant category archiving with historical ledger safety</li>
+          </ul>
+        </div>
+
+        <!-- 3. Ledger & Transactions -->
+        <div class="feature-detail-card" data-category="money">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Ledger</span>
+            <span class="detail-card-num">#03</span>
+          </div>
+          <h3 class="detail-card-title">Central Financial Ledger</h3>
+          <p class="detail-card-summary">Your rock-solid transaction center. Search, filter, bulk-edit, and restore transactions with complete confidence.</p>
+          <ul class="detail-card-list">
+            <li>Income, expense, and same/cross-currency transfers</li>
+            <li>Multi-field search and date, account, and payee filters</li>
+            <li>Bulk actions: change categories, tags, or delete with undo</li>
+            <li>Soft-delete and restore so you never lose mistakes</li>
+          </ul>
+        </div>
+
+        <!-- 4. Split Transactions -->
+        <div class="feature-detail-card" data-category="money">
+          <div class="detail-card-header">
+            <span class="badge badge-emerald">Splits</span>
+            <span class="detail-card-num">#04</span>
+          </div>
+          <h3 class="detail-card-title">Precise Split Transactions</h3>
+          <p class="detail-card-summary">Bought groceries and home supplies in a single receipt? Split the expense across multiple categories effortlessly.</p>
+          <ul class="detail-card-list">
+            <li>Split a single transaction across unlimited categories</li>
+            <li>Exact penny-perfect balance matching</li>
+            <li>Preserves the single original bank transaction for easy reconciliation</li>
+            <li>Full support in monthly budgets, comparisons, and tax deductions</li>
+          </ul>
+        </div>
+
+        <!-- 5. Tags & Receipt Attachments -->
+        <div class="feature-detail-card" data-category="money">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Attachments</span>
+            <span class="detail-card-num">#05</span>
+          </div>
+          <h3 class="detail-card-title">Tags & Digital Receipt Storage</h3>
+          <p class="detail-card-summary">Organize spending by project, vacation, or client reimbursement with reusable tags and direct receipt files.</p>
+          <ul class="detail-card-list">
+            <li>Tag transactions for vacations, home renovation, or hobbies</li>
+            <li>Attach receipt images and invoice documents directly</li>
+            <li>Filtered tag reports and spending breakdowns</li>
+            <li>All receipt files automatically included in system backups</li>
+          </ul>
+        </div>
+
+        <!-- 6. Bank Statement Ingestion -->
+        <div class="feature-detail-card" data-category="banking" id="bank-import">
+          <div class="detail-card-header">
+            <span class="badge badge-purple">Import</span>
+            <span class="detail-card-num">#06</span>
+          </div>
+          <h3 class="detail-card-title">25+ Bank Presets & Duplicate Guard</h3>
+          <p class="detail-card-summary">Import bank and credit card activity in seconds without cloud credentials or recurring third-party aggregator errors.</p>
+          <ul class="detail-card-list">
+            <li>Instant presets: Chase, BofA, Citi, Barclays, HSBC, Revolut, Wise, Monzo, N26, etc.</li>
+            <li>Universal custom CSV column mapper for any local bank</li>
+            <li>Support for CAMT.053 XML international bank statements</li>
+            <li>Smart duplicate detection prevents logging the same charge twice</li>
+          </ul>
+        </div>
+
+        <!-- 7. Statement Reconciliation -->
+        <div class="feature-detail-card" data-category="banking">
+          <div class="detail-card-header">
+            <span class="badge badge-purple">Reconciliation</span>
+            <span class="detail-card-num">#07</span>
+          </div>
+          <h3 class="detail-card-title">Bank Statement Reconciliation</h3>
+          <p class="detail-card-summary">Ensure your books match your bank statements to the exact cent. Lock verified transactions against accidental edits.</p>
+          <ul class="detail-card-list">
+            <li>Compare cleared transactions against monthly bank statements</li>
+            <li>Statement balance calculator with remaining difference check</li>
+            <li>Reconciled lock prevents accidental edits or deletions</li>
+            <li>Full reconciliation historical audit log</li>
+          </ul>
+        </div>
+
+        <!-- 8. Recurring Bills & Income -->
+        <div class="feature-detail-card" data-category="planning">
+          <div class="detail-card-header">
+            <span class="badge badge-emerald">Automation</span>
+            <span class="detail-card-num">#08</span>
+          </div>
+          <h3 class="detail-card-title">Recurring Bills & Subscriptions</h3>
+          <p class="detail-card-summary">Track recurring paychecks, utility bills, mortgage payments, and subscriptions with one-click posting and forecast feeds.</p>
+          <ul class="detail-card-list">
+            <li>Weekly (by weekday) and monthly (days 1-28) cadences</li>
+            <li>Interactive recurring deep dive with annual financial impact</li>
+            <li>One-click batch generation of due transactions</li>
+            <li>Directly powers your cash-flow projection and safe-to-spend guidance</li>
+          </ul>
+        </div>
+
+        <!-- 9. Budgets & Rollover Envelopes -->
+        <div class="feature-detail-card" data-category="planning" id="budgets">
+          <div class="detail-card-header">
+            <span class="badge badge-emerald">Budgeting</span>
+            <span class="detail-card-num">#09</span>
+          </div>
+          <h3 class="detail-card-title">Rollover Envelopes & Category Moves</h3>
+          <p class="detail-card-summary">Real-life budgeting that adapts when plans change. Carry savings forward and rebalance envelopes in seconds.</p>
+          <ul class="detail-card-list">
+            <li>Monthly category envelope allocations with visual progress</li>
+            <li>Configurable signed rollover carries surplus or overspending</li>
+            <li>Move money between envelopes on the fly without confusing ledger</li>
+            <li>Consolidated reporting-currency analysis across all envelopes</li>
+          </ul>
+        </div>
+
+        <!-- 10. Safe-to-Spend Guidance -->
+        <div class="feature-detail-card" data-category="planning" id="safe-to-spend">
+          <div class="detail-card-header">
+            <span class="badge badge-emerald">Guilt-Free Spending</span>
+            <span class="detail-card-num">#10</span>
+          </div>
+          <h3 class="detail-card-title">Safe-to-Spend Before Payday</h3>
+          <p class="detail-card-summary">A conservative calculation of what is truly safe to spend right now after reserving all upcoming bills, debt, and savings.</p>
+          <ul class="detail-card-list">
+            <li>Reserves all upcoming bills, rent, and loan repayments</li>
+            <li>Safeguards active credit card balances and emergency funds</li>
+            <li>Automatically identifies your next payday window</li>
+            <li>Displays an exact, safe daily allowance without guessing</li>
+          </ul>
+        </div>
+
+        <!-- 11. Scenarios & What-If Planning -->
+        <div class="feature-detail-card" data-category="planning" id="scenarios">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Simulation</span>
+            <span class="detail-card-num">#11</span>
+          </div>
+          <h3 class="detail-card-title">What-If Scenarios & Life Sandbox</h3>
+          <p class="detail-card-summary">Simulate major life decisions like buying a home, switching careers, or having a baby without altering your real transactions.</p>
+          <ul class="detail-card-list">
+            <li>Create custom scenarios (“New House”, “Career Shift”, “Sabbatical”)</li>
+            <li>Attach future plans and budget overrides isolated to that scenario</li>
+            <li>Compare forecast outcomes side-by-side with your real baseline</li>
+            <li>One-click promotion of plans into real transactions when ready</li>
+          </ul>
+        </div>
+
+        <!-- 12. Planned Future Items -->
+        <div class="feature-detail-card" data-category="planning">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Planning</span>
+            <span class="detail-card-num">#12</span>
+          </div>
+          <h3 class="detail-card-title">Planned Future Transactions</h3>
+          <p class="detail-card-summary">Keep track of one-time future commitments (annual car insurance, holiday gifts, tax payments) separately from recurring bills.</p>
+          <ul class="detail-card-list">
+            <li>Schedule future one-off income, expenses, and transfers</li>
+            <li>Feeds into upcoming cash-flow forecasts and safe-to-spend buffers</li>
+            <li>Easily post to real ledger when the payment happens</li>
+            <li>Keep future intentions separate until explicitly confirmed</li>
+          </ul>
+        </div>
+
+        <!-- 13. Goals & Sinking Funds -->
+        <div class="feature-detail-card" data-category="planning">
+          <div class="detail-card-header">
+            <span class="badge badge-emerald">Goals</span>
+            <span class="detail-card-num">#13</span>
+          </div>
+          <h3 class="detail-card-title">Goals & Sinking Funds</h3>
+          <p class="detail-card-summary">Turn your dreams into achievable targets. Calculate monthly contributions and protect your savings from being spent.</p>
+          <ul class="detail-card-list">
+            <li>Sinking funds with target dates (vacation, down payment, emergency)</li>
+            <li>Minimum balance floor targets to prevent overdrafts</li>
+            <li>Automated suggested monthly contribution calculation</li>
+            <li>Projected shortfall and breach detection alerts</li>
+          </ul>
+        </div>
+
+        <!-- 14. 365-Day Cashflow Forecasting -->
+        <div class="feature-detail-card" data-category="planning" id="forecasting">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Forecasting</span>
+            <span class="detail-card-num">#14</span>
+          </div>
+          <h3 class="detail-card-title">365-Day Cash-Flow Projection</h3>
+          <p class="detail-card-summary">See the future of your checking account balance up to a full year ahead based on real bills, budgets, and habits.</p>
+          <ul class="detail-card-list">
+            <li>Flexible 30, 60, 90, 180, and 365-day projection horizons</li>
+            <li>Combines current balances, recurring bills, future plans, and budgets</li>
+            <li>Daily projected balance points and 12-month summary rollups</li>
+            <li>Advance warning of potential low-balance or negative-cash dates</li>
+          </ul>
+        </div>
+
+        <!-- 15. Multi-Currency Support -->
+        <div class="feature-detail-card" data-category="wealth">
+          <div class="detail-card-header">
+            <span class="badge badge-amber">Currencies</span>
+            <span class="detail-card-num">#15</span>
+          </div>
+          <h3 class="detail-card-title">Multi-Currency & Exchange Rates</h3>
+          <p class="detail-card-summary">Manage bank accounts around the world. Each account retains its native currency while consolidating into your home currency.</p>
+          <ul class="detail-card-list">
+            <li>Assign any ISO currency to individual bank and investment accounts</li>
+            <li>Consolidated reports in your chosen home reporting currency</li>
+            <li>Support for cross-currency transfers with exact source/destination rates</li>
+            <li>Dated exchange-rate lookups and manual rate overrides</li>
+          </ul>
+        </div>
+
+        <!-- 16. Loans & EMI Tracking -->
+        <div class="feature-detail-card" data-category="wealth">
+          <div class="detail-card-header">
+            <span class="badge badge-amber">Liabilities</span>
+            <span class="detail-card-num">#16</span>
+          </div>
+          <h3 class="detail-card-title">Loans & EMI Payment Automation</h3>
+          <p class="detail-card-summary">Track mortgages, student loans, and auto financing with visual payoff meters and 12-month amortization projection schedules.</p>
+          <ul class="detail-card-list">
+            <li>Interactive loan deep dives with principal and interest tracking</li>
+            <li>12-Month forward amortization payment schedule</li>
+            <li>Linked recurring EMI automation posts payments directly to ledger</li>
+            <li>Reduces outstanding balance and records expense in one step</li>
+          </ul>
+        </div>
+
+        <!-- 17. Debt Payoff Optimizer -->
+        <div class="feature-detail-card" data-category="wealth" id="wealth">
+          <div class="detail-card-header">
+            <span class="badge badge-amber">Debt Freedom</span>
+            <span class="detail-card-num">#17</span>
+          </div>
+          <h3 class="detail-card-title">Debt Payoff Optimizer (Avalanche & Snowball)</h3>
+          <p class="detail-card-summary">Discover the fastest, cheapest path to becoming completely debt-free with side-by-side strategy comparisons.</p>
+          <ul class="detail-card-list">
+            <li>Compare Debt Avalanche (highest APR first) vs. Snowball (smallest balance first)</li>
+            <li>Exact integer-cent interest calculations with payment cascading</li>
+            <li>Shows your precise debt-free date under each strategy</li>
+            <li>Calculates total interest dollars saved by paying extra each month</li>
+          </ul>
+        </div>
+
+        <!-- 18. Investment Accounts & Portfolio -->
+        <div class="feature-detail-card" data-category="wealth">
+          <div class="detail-card-header">
+            <span class="badge badge-amber">Investments</span>
+            <span class="detail-card-num">#18</span>
+          </div>
+          <h3 class="detail-card-title">Investment Portfolio & True Returns</h3>
+          <p class="detail-card-summary">Track stocks, ETFs, and retirement funds with cost basis, realized gains, and professional Money-Weighted Returns (XIRR).</p>
+          <ul class="detail-card-list">
+            <li>Track buys, sells, dividend distributions, and manual price updates</li>
+            <li>Automated First-In-First-Out (FIFO) cost basis calculation</li>
+            <li>Realized vs. unrealized gains breakdown across every position</li>
+            <li>True portfolio XIRR and time-weighted performance metrics</li>
+          </ul>
+        </div>
+
+        <!-- 19. Assets & Executive Net Worth -->
+        <div class="feature-detail-card" data-category="wealth">
+          <div class="detail-card-header">
+            <span class="badge badge-amber">Net Worth</span>
+            <span class="detail-card-num">#19</span>
+          </div>
+          <h3 class="detail-card-title">Executive Balance Sheet & Net Worth</h3>
+          <p class="detail-card-summary">A single balance sheet unifying liquid cash, investments, real estate, vehicles, and liabilities into your true net worth.</p>
+          <ul class="detail-card-list">
+            <li>Consolidates bank accounts, portfolios, physical assets, and debts</li>
+            <li>Interactive 12-month net worth evolution trend chart</li>
+            <li>Solvency ratios, equity percentages, and debt-to-asset leverage</li>
+            <li>Quick revaluation for home, vehicle, and private holdings</li>
+          </ul>
+        </div>
+
+        <!-- 20. FIRE & Wealth Milestone Simulator -->
+        <div class="feature-detail-card" data-category="wealth">
+          <div class="detail-card-header">
+            <span class="badge badge-amber">FIRE Simulator</span>
+            <span class="detail-card-num">#20</span>
+          </div>
+          <h3 class="detail-card-title">FIRE & Long-Term Milestone Simulator</h3>
+          <p class="detail-card-summary">Calculate your Financial Independence number, test your portfolio survivability, and track milestones like Coast FIRE and Debt Freedom.</p>
+          <ul class="detail-card-list">
+            <li>Calculates personalized FIRE target from your real annual spending</li>
+            <li>Adjustable Safe Withdrawal Rate (SWR), inflation, and returns</li>
+            <li>Coast FIRE, First $100k, and Mortgage-Free milestone tracking</li>
+            <li>Deterministic 30-year Monte Carlo simulation with historical stress tests</li>
+          </ul>
+        </div>
+
+        <!-- 21. Financial Health Audit & Creep Sentinel -->
+        <div class="feature-detail-card" data-category="security">
+          <div class="detail-card-header">
+            <span class="badge badge-purple">Diagnostics</span>
+            <span class="detail-card-num">#21</span>
+          </div>
+          <h3 class="detail-card-title">Financial Health Audit & Creep Sentinel</h3>
+          <p class="detail-card-summary">A private, diagnostic checkup on your spending habits. Catches lifestyle creep and flags suspected duplicate card charges.</p>
+          <ul class="detail-card-list">
+            <li>Expense creep sentinel flags categories growing faster than normal</li>
+            <li>Detects identical card charges within 48 hours for review</li>
+            <li>Quarterly financial health scorecard (savings rate, liquidity, debt ratio)</li>
+            <li>100% Read-only and private — never alters transactions automatically</li>
+          </ul>
+        </div>
+
+        <!-- 22. Tax Center & Deduction Bucket Organization -->
+        <div class="feature-detail-card" data-category="tax-reports">
+          <div class="detail-card-header">
+            <span class="badge badge-emerald">Taxes</span>
+            <span class="detail-card-num">#22</span>
+          </div>
+          <h3 class="detail-card-title">Tax Center & Deduction Organizer</h3>
+          <p class="detail-card-summary">Take the stress out of tax season. Organize capital gains, dividend breakdowns, and deductible expenses with one click.</p>
+          <ul class="detail-card-list">
+            <li>Tax-year capital gains categorized into short-term and long-term</li>
+            <li>Dividends grouped by taxable vs. tax-advantaged accounts</li>
+            <li>Map categories and split lines to custom deduction buckets</li>
+            <li>Export organized summaries to CSV or ready-to-share PDF</li>
+          </ul>
+        </div>
+
+        <!-- 23. Comparative Analytics & Seasonality -->
+        <div class="feature-detail-card" data-category="tax-reports">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Analytics</span>
+            <span class="detail-card-num">#23</span>
+          </div>
+          <h3 class="detail-card-title">Comparative Analytics & Seasonality</h3>
+          <p class="detail-card-summary">Compare any two time periods to understand where your money went, plus a 12-month index showing seasonal spending swings.</p>
+          <ul class="detail-card-list">
+            <li>Compare arbitrary date ranges across categories, payees, and accounts</li>
+            <li>Clear dollar and percentage variances without misleading zero-division</li>
+            <li>12-Month seasonality index identifies holiday and summer expense peaks</li>
+            <li>Account for split lines and multi-currency conversions accurately</li>
+          </ul>
+        </div>
+
+        <!-- 24. Professional PDF Reporting Suite -->
+        <div class="feature-detail-card" data-category="tax-reports" id="reports">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Reports</span>
+            <span class="detail-card-num">#24</span>
+          </div>
+          <h3 class="detail-card-title">Executive PDF Statements Suite</h3>
+          <p class="detail-card-summary">Generate gorgeous, professional PDF statements for bankers, accountants, or your personal archive.</p>
+          <ul class="detail-card-list">
+            <li>Universal top-right "Export as PDF" on every screen and filtered view</li>
+            <li>10 dedicated statements: Cashflow, Budgets, Net Worth, Investments, etc.</li>
+            <li>Interactive in-app sheet previewer with custom period selectors</li>
+            <li>Filtered transaction CSV exports honoring your exact active search</li>
+          </ul>
+        </div>
+
+        <!-- 25. Foolproof Backup & Restore -->
+        <div class="feature-detail-card" data-category="security" id="backup">
+          <div class="detail-card-header">
+            <span class="badge badge-purple">Backup</span>
+            <span class="detail-card-num">#25</span>
+          </div>
+          <h3 class="detail-card-title">One-Click Backup & Rollback Safety</h3>
+          <p class="detail-card-summary">Your financial records are precious. Backup your complete ledger and attachments into a single portable, verified archive.</p>
+          <ul class="detail-card-list">
+            <li>One-click snapshot including receipts, settings, and full history</li>
+            <li>Automatic database integrity validation before finalizing backup</li>
+            <li>Safe staged restore with automatic rollback protection if interrupted</li>
+            <li>Store backups on external flash drives, NAS, or private encrypted clouds</li>
+          </ul>
+        </div>
+
+        <!-- 26. Fast Browser-Like Navigation -->
+        <div class="feature-detail-card" data-category="security">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Interface</span>
+            <span class="detail-card-num">#26</span>
+          </div>
+          <h3 class="detail-card-title">Fast Navigation & Keyboard Shortcuts</h3>
+          <p class="detail-card-summary">Designed for speed and comfort. Enjoy browser-like back button history, responsive layouts, and standard keyboard shortcuts.</p>
+          <ul class="detail-card-list">
+            <li>Top-left back button remembers page jumps and account deep dives</li>
+            <li>Full support for macOS (⌘[ or ⌘←) and Windows/Linux (Alt+←) shortcuts</li>
+            <li>Hardware mouse back-button support</li>
+            <li>Clean sidebar hierarchy: Dashboard, Planning, Wealth, Statements</li>
+          </ul>
+        </div>
+
+        <!-- 27. Display Scaling & Accessibility -->
+        <div class="feature-detail-card" data-category="security">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Accessibility</span>
+            <span class="detail-card-num">#27</span>
+          </div>
+          <h3 class="detail-card-title">Persistent Display Scaling (80%–200%)</h3>
+          <p class="detail-card-summary">Crisp and easy on your eyes on any screen. Adjust the entire application scale from 80% up to 200% with standard zoom shortcuts.</p>
+          <ul class="detail-card-list">
+            <li>Persistent zoom scaling preserved across app launches</li>
+            <li>Full HiDPI & 4K display optimization</li>
+            <li>Quick zoom using standard Ctrl/Cmd + and Ctrl/Cmd - shortcuts</li>
+            <li>High-contrast typography with clear semantic status indicators</li>
+          </ul>
+        </div>
+
+        <!-- 28. 100% Privacy & Data Ownership -->
+        <div class="feature-detail-card" data-category="security" id="privacy">
+          <div class="detail-card-header">
+            <span class="badge badge-emerald">Privacy First</span>
+            <span class="detail-card-num">#28</span>
+          </div>
+          <h3 class="detail-card-title">100% Private, Local-First Architecture</h3>
+          <p class="detail-card-summary">No cloud account required. No trackers. No corporate servers seeing your purchases. Your finances remain strictly yours.</p>
+          <ul class="detail-card-list">
+            <li>Single private file stored directly on your computer</li>
+            <li>Zero requirement for user registration, email, or passwords</li>
+            <li>No cloud synchronization server or third-party data broker ties</li>
+            <li>Customizable database storage path (local drive or encrypted folder)</li>
+          </ul>
+        </div>
+
+        <!-- 29. Cent-Exact Mathematical Integrity -->
+        <div class="feature-detail-card" data-category="security">
+          <div class="detail-card-header">
+            <span class="badge badge-emerald">Integrity</span>
+            <span class="detail-card-num">#29</span>
+          </div>
+          <h3 class="detail-card-title">Cent-Exact Mathematical Integrity</h3>
+          <p class="detail-card-summary">Say goodbye to spreadsheet rounding errors. Every transaction, transfer, and split is calculated to the exact penny.</p>
+          <ul class="detail-card-list">
+            <li>Integer cent-level math prevents penny-rounding discrepancies</li>
+            <li>Atomic operations ensure multi-step transactions never leave half-saved data</li>
+            <li>Deterministic calculation models for reproducible forecasts</li>
+            <li>Explicit warnings if currency rates or debt inputs are missing</li>
+          </ul>
+        </div>
+
+        <!-- 30. Guided Onboarding & Sample Data -->
+        <div class="feature-detail-card" data-category="money">
+          <div class="detail-card-header">
+            <span class="badge badge-primary">Onboarding</span>
+            <span class="detail-card-num">#30</span>
+          </div>
+          <h3 class="detail-card-title">Instant Setup & Realistic Sample Data</h3>
+          <p class="detail-card-summary">Test-drive the entire application with realistic historical sample data or start completely clean in seconds.</p>
+          <ul class="detail-card-list">
+            <li>One-click setup of your primary reporting currency on first launch</li>
+            <li>Optional rich sample dataset with 3+ years of realistic financial history</li>
+            <li>Learn the interface with fully populated budgets, investments, and loans</li>
+            <li>Reset or start your fresh personal ledger whenever you are ready</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section section-subtle">
+    <div class="container">
+      <div class="cta-banner-box">
+        <h2>Ready to experience the full suite?</h2>
+        <p>Get all 30 powerful features in a single, lightweight desktop app.</p>
+        <div class="cta-banner-actions">
+          <a href="#download" class="btn btn-emerald btn-lg js-open-download">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="nav-brand">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <span>Finance Tracker</span>
+          </a>
+          <p>The private, offline-first personal finance desktop command center for everyday people. Track, budget, forecast, and build wealth on your terms.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Product</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="features.html">All 30 Features</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="#download" class="js-open-download">Download App</a></li>
+            <li><a href="mailto:hola@goodapps.store">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Features</h5>
+          <ul class="footer-links">
+            <li><a href="features.html#safe-to-spend">Safe to Spend Guidance</a></li>
+            <li><a href="features.html#budgets">Rollover Envelopes</a></li>
+            <li><a href="features.html#bank-import">Bank Statement Import</a></li>
+            <li><a href="features.html#forecasting">365-Day Cashflow</a></li>
+            <li><a href="features.html#wealth">Net Worth & Investments</a></li>
+            <li><a href="features.html#reports">Executive PDF Reports</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Trust & Privacy</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#faq">Frequently Asked Questions</a></li>
+            <li><a href="features.html#privacy">Local-First Security</a></li>
+            <li><a href="features.html#backup">Backup & Restore</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-disclaimer">
+          <strong>Notice:</strong> Finance Tracker is an independent personal finance desktop management tool. It is not a bank, broker, or financial advisor. All forecasts, simulations, and tax calculations are organizational planning aids.
+        </div>
+        <div>
+          &copy; 2026 Finance Tracker. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Download Modal Dialog -->
+  <div class="modal-overlay" id="download-modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h3>Download Finance Tracker</h3>
+        <p>Choose your operating system to download the latest release.</p>
+      </div>
+
+      <div class="download-options-list">
+        <!-- macOS -->
+        <a href="#installer-macos" class="download-option-item" onclick="alert('Downloading Finance Tracker for macOS (Apple Silicon & Intel DMG)...'); return false;">
+          <div class="option-os-info">
+            <div class="option-os-icon">🍎</div>
+            <div>
+              <div class="option-os-name">macOS Installer</div>
+              <div class="option-os-arch">Apple Silicon (M1/M2/M3/M4) & Intel • .dmg</div>
+            </div>
+          </div>
+          <span class="btn btn-primary btn-sm">Download</span>
+        </a>
+
+        <!-- Windows -->
+        <a href="#installer-windows" class="download-option-item" onclick="alert('Downloading Finance Tracker for Windows (64-bit EXE)...'); return false;">
+          <div class="option-os-info">
+            <div class="option-os-icon">🪟</div>
+            <div>
+              <div class="option-os-name">Windows Installer</div>
+              <div class="option-os-arch">Windows 10 / 11 (64-bit) • .exe setup</div>
+            </div>
+          </div>
+          <span class="btn btn-primary btn-sm">Download</span>
+        </a>
+
+        <!-- Linux -->
+        <a href="#installer-linux" class="download-option-item" onclick="alert('Downloading Finance Tracker for Linux (.AppImage / .deb)...'); return false;">
+          <div class="option-os-info">
+            <div class="option-os-icon">🐧</div>
+            <div>
+              <div class="option-os-name">Linux Package</div>
+              <div class="option-os-arch">Ubuntu, Debian, Fedora, Arch • .AppImage & .deb</div>
+            </div>
+          </div>
+          <span class="btn btn-primary btn-sm">Download</span>
+        </a>
+      </div>
+
+      <p style="text-align: center; font-size: 0.82rem; color: var(--text-subtle); margin-top: 24px;">
+        No account registration required.
+      </p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

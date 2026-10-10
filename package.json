@@ -1,0 +1,28 @@
+{
+  "name": "finance-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 1420",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "seed": "python3 scripts/seed_database.py",
+    "seed:verify": "python3 scripts/verify_database.py"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.8.0",
+    "@tauri-apps/plugin-dialog": "^2.4.0",
+    "@tauri-apps/plugin-fs": "^2.2.0",
+    "@tauri-apps/plugin-notification": "^2.4.0",
+    "@tauri-apps/plugin-opener": "^2.4.0",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.0.0"
+  }
+}
