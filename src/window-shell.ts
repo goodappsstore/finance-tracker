@@ -1,11 +1,12 @@
 import { getCurrentWindow } from "@tauri-apps/api/window";
+import brandLogo from "../src-tauri/icons/icon.svg";
 
 export function titlebarHtml(): string {
   const platform = /Mac/i.test(navigator.platform) ? "macos" : "other";
   const control = (action: string, label: string, path: string) =>
     `<button type="button" class="window-control window-control-${action}" data-window-action="${action}" title="${label}" aria-label="${label}"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">${path}</svg></button>`;
   return `<header class="window-titlebar" data-platform="${platform}" data-tauri-drag-region>
-    <span class="titlebar-caption">Finance Tracker</span>
+    <span class="titlebar-caption"><img src="${brandLogo}" alt="" width="22" height="22" draggable="false" /><span>Finance Tracker</span><span class="titlebar-publisher">| GoodApps (hello@goodapps.store)</span></span>
     <div class="window-controls" aria-label="Window controls">
       ${control("minimize", "Minimize window", '<path d="M3 8h10"/>')}
       ${control("maximize", "Maximize or restore window", '<rect x="3" y="3" width="10" height="10" rx="1"/>')}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" fill="none">
+  <title>Finance Tracker</title>
+  <desc>A white wallet with rising blue and emerald balance bars on a rounded sapphire tile.</desc>
+  <defs>
+    <linearGradient id="tile" x1="32" y1="8" x2="224" y2="248" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60a5fa"/>
+      <stop offset=".45" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#1e40af"/>
+    </linearGradient>
+    <linearGradient id="wallet" x1="48" y1="82" x2="204" y2="202" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="growth" x1="138" y1="104" x2="160" y2="178" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34d399"/>
+      <stop offset="1" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#tile)"/>
+  <rect x="9" y="9" width="238" height="238" rx="55" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+  <path d="M48 103V87c0-10 6-18 16-21l99-25c11-3 21 5 21 16v48H48Z" fill="#bfdbfe"/>
+  <path d="m70 79 92-23" stroke="#eff6ff" stroke-width="7" stroke-linecap="round"/>
+  <rect x="46" y="89" width="164" height="120" rx="24" fill="#172554" fill-opacity=".2"/>
+  <rect x="48" y="82" width="160" height="120" rx="22" fill="url(#wallet)"/>
+  <rect x="49" y="83" width="158" height="118" rx="21" stroke="#ffffff" stroke-opacity=".65" stroke-width="2"/>
+  <rect x="72" y="150" width="22" height="28" rx="6" fill="#60a5fa"/>
+  <rect x="105" y="128" width="22" height="50" rx="6" fill="#2563eb"/>
+  <rect x="138" y="104" width="22" height="74" rx="6" fill="url(#growth)"/>
+  <rect x="174" y="116" width="42" height="40" rx="12" fill="#1e40af"/>
+  <rect x="175" y="117" width="40" height="38" rx="11" stroke="#93c5fd" stroke-opacity=".5" stroke-width="2"/>
+  <circle cx="192" cy="136" r="5" fill="#dbeafe"/>
+</svg>

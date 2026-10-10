@@ -9,6 +9,7 @@ import { getCurrentWebview } from "@tauri-apps/api/webview";
 import { open, save } from "@tauri-apps/plugin-dialog";
 import { writeTextFile } from "@tauri-apps/plugin-fs";
 import "./styles.css";
+import brandLogo from "../src-tauri/icons/icon.svg";
 import type {
   Account, Category, TransactionRecord, BalanceRecord, SummaryRecord,
   ReconciliationRecord, RecurringRuleRecord, BudgetStatusRecord, PlanningScenarioRecord,
@@ -521,7 +522,7 @@ function render(){
             </svg>
           </button>
         ` : ""}
-        <h1><i>₿</i> Finance Tracker <span class="topbar-publisher">| GoodApps (hello@goodapps.store)</span> <span class="pill">${esc(currency)} · ${balances.length} accounts</span></h1>
+        <h1><img class="app-brand-logo" src="${brandLogo}" alt="" width="32" height="32" draggable="false" /> Finance Tracker <span class="pill">${esc(currency)} · ${balances.length} accounts</span></h1>
       </div>
       <div class="topbar-actions">
         <span class="pill" title="${esc(dbPath)}">${esc(dbPath.split("/").slice(-2).join("/"))}</span>

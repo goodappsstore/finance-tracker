@@ -1,5 +1,7 @@
 # Finance Tracker
 
+<img src="src-tauri/icons/icon.svg" alt="Finance Tracker logo" width="96" height="96" />
+
 Local-first personal finance tracker. Rust + Tauri + SQLite. Single `.db` file, no cloud; the app remains usable offline and contacts Frankfurter only when the user requests an API exchange-rate quote.
 
 Built as a modern desktop app around a robust local SQLite ledger engine, then wrapped in Tauri commands and a fresh frontend.
@@ -88,6 +90,18 @@ On first launch you'll be prompted to pick a reporting currency (e.g. `USD`, `EU
 - Linux: `~/.local/share/financetracker/tracker.db`
 - Windows: `%LOCALAPPDATA%/Finance Tracker/tracker.db`
 You can change the path in **Settings → Database** or via `FINANCE_TRACKER_DB_PATH=/path/to/file.db npm run tauri dev`.
+
+## App logo
+
+The editable source is [`src-tauri/icons/icon.svg`](src-tauri/icons/icon.svg): a white wallet with rising blue and emerald balance bars on a sapphire tile. The app header, title bar, and browser favicon use this SVG directly. The standalone website uses a copy at `site/assets/logo.svg`; keep that copy in sync when editing the source.
+
+Regenerate PNG, Windows ICO, macOS ICNS, and mobile icons with the existing Tauri CLI:
+
+```bash
+npm run tauri -- icon src-tauri/icons/icon.svg --output src-tauri/icons --ios-color '#2563eb'
+```
+
+Native icons are embedded in the executable. After regeneration, restart `npm run tauri dev` to rebuild and load the new Dock/Cmd+Tab icon. For an installed app, rebuild the bundle with `npm run tauri build`, replace the installed app, and relaunch it. The Rust build script tracks changes in the icons directory.
 
 ## GitHub releases
 
