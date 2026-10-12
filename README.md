@@ -6,6 +6,36 @@ Local-first personal finance tracker. Rust + Tauri + SQLite. Single `.db` file, 
 
 Built as a modern desktop app around a robust local SQLite ledger engine, then wrapped in Tauri commands and a fresh frontend.
 
+## Screenshots
+
+### Finance Tracker dashboard
+
+![Finance Tracker dashboard](screenshots/dashboard.jpg)
+
+### Finance Tracker accounts
+
+![Finance Tracker accounts](screenshots/accounts.jpg)
+
+### Finance Tracker assets and liabilities
+
+![Finance Tracker assets and liabilities](screenshots/assets-and-liabilities.jpg)
+
+### Finance Tracker loans and EMIs
+
+![Finance Tracker loans and EMIs](screenshots/loans-and-emis.jpg)
+
+### Finance Tracker forecast
+
+![Finance Tracker forecast](screenshots/forecast.jpg)
+
+### Finance Tracker financial health
+
+![Finance Tracker financial health](screenshots/financial-health.jpg)
+
+### Finance Tracker reports
+
+![Finance Tracker reports](screenshots/reports.jpg)
+
 ## Features (reference: original requirements)
 
 | # | Feature | Status |
