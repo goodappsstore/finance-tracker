@@ -224,6 +224,10 @@ Backdated holding sales are checked against the full chronological trade history
 
 Time-weighted returns chain valuations immediately before each trade or dividend, using trade execution prices and same-day manual prices for other open holdings. Events on the same date follow their recorded order; manual quotes provide a daily valuation, not intraday market data. Missing flow-date prices make returns unavailable instead of using stale valuations. Future events are excluded.
 
+## AI Assistance
+
+Heavy AI assistance used. Not vibe-coded.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
